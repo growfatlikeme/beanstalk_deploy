@@ -6,10 +6,11 @@ A basic repository to deploy sample python application using elastic beanstalk s
 
 ## 🔧 Answers to Questions
 
-**How would it look like managing an application across multiple environments in Elastic Beanstalk? **
+##How would it look like managing an application across multiple environments in Elastic Beanstalk? ##
+
 Managing an application across multiple environments (dev, staging, prod) in Elastic Beanstalk involves setting environment-specific variables.
 
-**Service Role vs. EC2 Instance Profile**
+##Service Role vs. EC2 Instance Profile##
 _Service Role:_
 
 - Used by Elastic Beanstalk service itself <br>
@@ -24,7 +25,7 @@ _EC2 Instance Profile:_
 - Needs permissions specific to your application needs <br>
 - Example permissions: s3:GetObject, dynamodb:Query, sqs:ReceiveMessage <br>
 
-**Elastic Beanstalk can work with RDS in two ways:**
+##Elastic Beanstalk can work with RDS in two ways:##
 
 _Integrated RDS (not recommended for production):_
 
@@ -39,3 +40,11 @@ _External RDS (recommended approach):_
 - Database lifecycle is independent of environment <br>
 
 ## 🚀 Extras
+
+**CLI command for Ubuntu WSL for zipping and unzipping the package**
+
+`sh \n echo "zip python2.zip *" \n `
+✅ This creates python2.zip containing all files in the current directory.
+
+`sh \n echo "unzip python2.zip -d your_destination_folder/" \n `
+✅ Extract python2.zip content to a your desired folder
