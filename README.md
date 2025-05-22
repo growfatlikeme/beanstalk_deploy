@@ -43,9 +43,9 @@ _External RDS (recommended approach):_
 > [!TIP]
 > The following is CLI command in Ubuntu WSL for zipping and unzipping the package
 
-`zip python2.zip *`
+`zip ../python2.zip -r * .[^.]*`
 \
-✅ This creates python2.zip containing all files in the current directory.
+✅ This creates python2.zip including hidden files and folder as a source bundle.
 
 `unzip python2.zip -d your_destination_folder/`
 \
