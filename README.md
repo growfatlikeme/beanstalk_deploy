@@ -26,7 +26,7 @@ _EC2 Instance Profile:_
 - Needs permissions specific to your application needs <br>
 - Example permissions: s3:GetObject, dynamodb:Query, sqs:ReceiveMessage <br>
 
-### Elastic Beanstalk can work with RDS in two ways:
+### :confetti_ball: Elastic Beanstalk can work with RDS in two ways:
 
 _Integrated RDS (not recommended for production):_
 
@@ -41,10 +41,12 @@ _External RDS (recommended approach):_
 - Database lifecycle is independent of environment <br>
 
 > [!TIP]
-> CLI command for Ubuntu WSL for zipping and unzipping the package
+> The following is CLI command in Ubuntu WSL for zipping and unzipping the package
 
 `zip python2.zip *`
+\
 ✅ This creates python2.zip containing all files in the current directory.
 
 `unzip python2.zip -d your_destination_folder/`
+\
 ✅ Extract python2.zip content to a your desired folder
